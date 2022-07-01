@@ -1,5 +1,5 @@
-# Examples for knx-go
+# Basic Examples For knx-go
 
-This repository contains a collection of examples using the [knx-go](https://github.com/vapourismo/knx-go/) package.
+This repository contains a collection of self-contained examples using the [knx-go](https://github.com/vapourismo/knx-go/) package.
 
-- **listtypes**: list all available DPT types in knx-go with default values and units.
+- **listtypes**: lists all available datapoint types implemented in knx-go with their default values and units. For more information about their usage, please consult the KNX System Specifications.
