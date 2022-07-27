@@ -1,5 +1,5 @@
-module github.com/mobilarte/knx-go-examples/basic/listtypes
+module github.com/mobilarte/knx-go-examples/listtypes
 
 go 1.18
 
-require github.com/vapourismo/knx-go v0.0.0-20220606184105-ba35ab2cdd61
+require github.com/mobilarte/knx-exp v0.0.0-20220727185851-3c2d2a5a73ed

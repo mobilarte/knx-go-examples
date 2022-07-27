@@ -1,4 +1,4 @@
-// Copyright 2020 mobilarte.
+// Copyright 2022 Martin Müller.
 // Licensed under the MIT license which can be found in the LICENSE file.
 
 // Prints a list of supported DPTs, with default value and unit.
@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/vapourismo/knx-go/knx/dpt"
+	"github.com/mobilarte/knx-exp/knx/dpt"
 )
 
 // Custom sort for DPT strings having shape "x.y"
@@ -40,7 +40,7 @@ func (s byDPT) Less(i, j int) bool {
 
 func main() {
 
-	fmt.Printf("List of implemented DPTs for knx-go http://github.com/vapourismo/knx-go\n")
+	fmt.Printf("List of implemented DPTs in knx-exp http://github.com/mobilarte/knx-exp\n")
 	fmt.Printf("%10s %20s %20s\n", "DPT", "Default Value", "Unit")
 
 	keys := dpt.ListSupportedTypes()
@@ -59,5 +59,5 @@ func main() {
 		fmt.Printf("%10s %20s %20s\n", key, d, d.(dpt.DatapointMeta).Unit())
 	}
 
-	fmt.Println("")
+	fmt.Printf("Total number of DPTs: %d\n", len(keys))
 }
